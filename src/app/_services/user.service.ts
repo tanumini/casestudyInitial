@@ -15,7 +15,7 @@ getAll()
  // return this.httpClient.get<User[]>(`${environment}/users`)
 }
 getById(id: number) {
-  return this.httpClient.get(`${environment.apiurl}/users/${id}`);
+  return this.httpClient.get<User>(`${environment.apiurl}/users/${id}`);
 }
 
 register(user: User) {

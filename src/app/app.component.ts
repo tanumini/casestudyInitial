@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from './_models';
+import { Role } from './_models/Role';
 import { AuthenticationService } from './_services';
 
 @Component({
@@ -9,15 +10,13 @@ import { AuthenticationService } from './_services';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  user: User = new User;
-
-    constructor(private authenticationService: AuthenticationService) {
-        this.authenticationService.user.subscribe(x => this.user = x);
-    }
-
-
-    logout() {
-        this.authenticationService.logout();
-    }
   
+    constructor() { }
+
+    ngOnInit(): void {
+    }
+   
+    user: User = new User;
+
+    
 }

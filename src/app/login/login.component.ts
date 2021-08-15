@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   {
     if(this.authenticationService.userValue)
     {
-      this.router.navigate(['/']);
+      this.router.navigate(['customer-dashboard']);
     }
    }
 
@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
     pipe(first()).subscribe({
       next: () => {
         // get return url from query parameters or default to home page
-        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || 'home';
         this.router.navigateByUrl(returnUrl);
     },
     error: error => {

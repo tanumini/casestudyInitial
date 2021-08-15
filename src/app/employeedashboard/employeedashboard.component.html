@@ -1,0 +1,17 @@
+<div class="card mt-4">
+    <h4 class="card-header">Home</h4>
+    <div class="card-body">
+        <p>Your role is: <strong>{{user.role}}</strong>.</p>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="user.role== 'Supervisor' ">
+            <li>Supervisor access</li>
+        </ul>
+        <ul *ngIf="user.role== 'SalesOfficer' ">
+            <li>SalesOfficer access</li>
+        </ul>
+        <ul  >
+            <a class="nav-item nav-link" (click)="logout()">Logout</a>  
+        </ul>
+       
+    </div>
+</div>

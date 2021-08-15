@@ -4,10 +4,12 @@ import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
 import {User} from '../_models';
+import { Role } from '../_models/Role';
 
 
-const users: User[] = [{ id: 1, username: 'test', password: 'test', firstname: 'Test', lastname: 'User' },
-{id:2,username:'test1',password:'test1',firstname:'Test1',lastname:'User'}];
+const users: User[] = [{ id: 1, username: 'test', password: 'test', firstname: 'Test', lastname: 'User',role:Role.User },
+{id:2,username:'test1',password:'test1',firstname:'Test1',lastname:'User',role:Role.User},
+{ id: 3, username: 'salesOfficer', password: 'salesOfficer', firstname: 'Normal', lastname: 'User', role: Role.SalesOfficer }];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
