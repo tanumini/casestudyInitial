@@ -1,10 +1,15 @@
-<p>home works!</p>
-<div *ngIf="loading" class="spinner-border spinner-border-sm mr-1 ">
-    
+
+<div>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+          <!--     <a href="#" class="navbar-brand">INSTA LOAN APPLICATION</a>--> 
+                <div class="navbar-nav mr-auto">
+                        <li class="nav-item" routerLink="entry" routerLinkActive="active">
+                                <a href="javascript:void(0)" class="nav-link">All LOAN APPLICATIONS</a>
+                        </li>
+                        <li class="nav-item" routerLink="add" routerLinkActive="active">
+                                <a href="javascript:void(0)" class="nav-link">APPLY FOR A LOAN</a>
+                        </li>
+                </div>
+        </nav>
 
 </div>
-<ul *nfIf="users">
-        <li *ngFor="let user of users">
-{{user.firstname}}
-        </li>
-</ul>

@@ -1,0 +1,47 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "firstname": "Jaya",
+      "lastname": "bachan",
+      "email": "jaya@gmail.com",
+      "contact": 9786090541,
+      "address": "11th street mumbai",
+      "occupation": "real estate",
+      "employername": "own",
+      "maritalstatus": "single",
+      "gender": "female",
+      "pancardno": "ABCDE1234A",
+      "aadhaarno": 245178340119,
+      "status": "rejected"
+    },
+    {
+      "firstname": "fhshskjg",
+      "lastname": "tkjhnjkh",
+      "email": "tjhej@gmail.com",
+      "contact": 9890909898,
+      "address": "abc card",
+      "occuption": "doctor",
+      "employername": "freeman",
+      "maritalstatus": "married",
+      "gender": "female",
+      "pancardno": "ITHTH3456U",
+      "aadhaarno": 234509897997,
+      "id": 2
+    },
+    {
+      "firstname": "Rihan",
+      "lastname": "Mehnaz",
+      "email": "rihan@gmail.com",
+      "contact": 9876767546,
+      "address": "sai nagar bangalore",
+      "occuption": "engineer",
+      "employername": "own",
+      "maritalstatus": "single",
+      "gender": "female",
+      "aadhaarno": 265643578998,
+      "pancardno": "TPYTU9080T",
+      "id": 3
+    }
+  ]
+}
